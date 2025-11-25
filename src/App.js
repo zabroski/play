@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Services from "./components/Services/Services";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import BackToTop from "./components/BackToTop/BackToTop";
+
+// ensure global css is imported by index.js (CRA default) - otherwise import here:
+// import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <Navbar />
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+
+        <section id="service">
+          <Services />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+
+      <Footer />
+      <BackToTop />
     </div>
   );
 }

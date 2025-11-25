@@ -1,0 +1,30 @@
+/* src/components/Contact/Contact.css */
+.contact .contact-form { margin-top:18px; display:flex; flex-direction:column; gap:12px; }
+.contact img { width:100%; height:auto; object-fit:cover; border-radius:8px; }
+.btn-ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(56,0,76,0.08);
+  padding: 10px 14px;
+  border-radius:10px;
+  font-weight:600;
+}
+.success {
+  color:#065f46; background:#ecfdf5; padding:10px 12px; border-radius:8px; border:1px solid rgba(6,95,70,0.08);
+}
+.error {
+  color:#7f1d1d; background:#fff1f2; padding:10px 12px; border-radius:8px; border:1px solid rgba(127,29,29,0.06);
+}
+
+
+.address-link {
+  display: inline-block;
+  margin-top: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.address-link:hover {
+  text-decoration: underline;
+  color: #6a5acd; /* your purple accent */
+}

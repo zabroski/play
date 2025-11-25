@@ -1,0 +1,14 @@
+/* src/components/Hero/Hero.css */
+.hero-grid {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:18px;
+  align-items:center;
+}
+.hero-card img { width:100%; height:320px; object-fit:cover; border-radius:10px; display:block; }
+.hero-copy .section-title { margin-top:6px; }
+
+@media(min-width:900px){
+  .hero-grid { grid-template-columns: 480px 1fr; gap:36px; }
+  .hero-card img { height:420px; }
+}
