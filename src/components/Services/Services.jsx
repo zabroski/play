@@ -62,8 +62,8 @@ export default function Services() {
     <div className="container">
       <div className="section-header">
         <p className="heading">Services</p>
-        <h2 className="section-title">What I offer</h2>
-        <p className="text-muted">Relationship and evidence-based practice.</p>
+        {/* <h2 className="section-title">What I offer</h2> */}
+        {/* <p className="text-muted">Relationship and evidence-based practice.</p> */}
       </div>
 
       <div className="services-grid">
