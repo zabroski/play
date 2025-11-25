@@ -93,7 +93,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 required
-                placeholder="Tell me a bit about what you'd like help with…"
+                placeholder=""
               />
             </div>
 
