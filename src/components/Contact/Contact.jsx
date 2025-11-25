@@ -102,9 +102,9 @@ export default function Contact() {
                 {isSending ? "Sending…" : "Send message"}
               </button>
 
-              <button type="button" className="btn-ghost" onClick={handleReset}>
+              {/* <button type="button" className="btn-ghost" onClick={handleReset}>
                 Reset
-              </button>
+              </button> */}
             </div>
 
             <div aria-live="polite" style={{ marginTop: 12 }}>
@@ -136,7 +136,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="address-link"
               >
-                <div style={{ fontWeight: 600 }}>215 West 88th street Suite 1C</div>
+                <div style={{ fontWeight: 600 }}>215 West 88th Street Suite 1C</div>
                 <div className="text-muted">New York, NY 10024</div>
               </a>
 
