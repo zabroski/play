@@ -1,27 +1,36 @@
-/* src/components/Services/Services.css */
+/* DEFAULT (DESKTOP) – vertical layout */
 .services-grid {
-  display:grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
 }
+
+/* Card title */
 .service-title {
   margin: 0 0 8px 0;
   font-size: 1.05rem;
   color: var(--primary);
-  font-weight:700;
-}
-
-.heading {
-  font-size: 21px;
+  font-weight: 700;
 }
 
 .view-btn {
   cursor: pointer;
 }
 
-@media(min-width:720px){
-  .services-grid { grid-template-columns: 1fr 1fr; gap:20px; }
-}
-@media(min-width:1100px){
-  .services-grid { grid-template-columns: repeat(4, 1fr); gap:24px; }
+/* ─── MOBILE: horizontal scroll list ───────────────────────────── */
+@media (max-width: 720px) {
+  .services-grid {
+    display: flex;
+    flex-direction: row;       /* put cards in a row */
+    overflow-x: auto;          /* side scroll */
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory; /* smooth snapping */
+  }
+
+  .service-card {
+    flex: 0 0 85%;             /* nice big cards */
+    min-width: 85%;
+    scroll-snap-align: start;
+  }
 }
