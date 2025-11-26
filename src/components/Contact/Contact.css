@@ -28,3 +28,33 @@
   text-decoration: underline;
   color: #6a5acd; /* your purple accent */
 }
+
+
+
+
+/* Full background section */
+.contact-section {
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url("../../assets/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Soft readability overlay */
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55); /* adjust stronger/softer */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
+  backdrop-filter: blur(2px); /* light blur */
+  z-index: 1;
+}
+
+/* Content should sit above overlay */
+.contact-content {
+  position: relative;
+  z-index: 2;
+}
