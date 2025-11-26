@@ -17,6 +17,35 @@
   cursor: pointer;
 }
 
+
+
+/* Full-width background wrapper for Services */
+.services-section {
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url("../../assets/services-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Soft white tint so text stays readable (no extra blur) */
+.services-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 0; /* or 20px if your container uses rounded corners */
+  z-index: 1;
+}
+
+/* Make sure content sits above overlay */
+.services-content {
+  position: relative;
+  z-index: 2;
+}
+
+
 /* ─── MOBILE: horizontal scroll list ───────────────────────────── */
 @media (max-width: 720px) {
   .services-grid {
