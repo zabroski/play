@@ -1,38 +1,4 @@
-/* src/components/Contact/Contact.css */
-.contact .contact-form { margin-top:18px; display:flex; flex-direction:column; gap:12px; }
-.contact img { width:100%; height:auto; object-fit:cover; border-radius:8px; }
-.btn-ghost {
-  background: transparent;
-  color: var(--primary);
-  border: 1px solid rgba(56,0,76,0.08);
-  padding: 10px 14px;
-  border-radius:10px;
-  font-weight:600;
-}
-.success {
-  color:#065f46; background:#ecfdf5; padding:10px 12px; border-radius:8px; border:1px solid rgba(6,95,70,0.08);
-}
-.error {
-  color:#7f1d1d; background:#fff1f2; padding:10px 12px; border-radius:8px; border:1px solid rgba(127,29,29,0.06);
-}
-
-
-.address-link {
-  display: inline-block;
-  margin-top: 4px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.address-link:hover {
-  text-decoration: underline;
-  color: #6a5acd; /* your purple accent */
-}
-
-
-
-
-/* Full background section */
+/* layout */
 .contact-section {
   position: relative;
   width: 100%;
@@ -43,18 +9,137 @@
   background-repeat: no-repeat;
 }
 
-/* Soft readability overlay */
 .contact-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.55); /* adjust stronger/softer */
-  -webkit-backdrop-filter: blur(2px); /* Safari support */
-  backdrop-filter: blur(2px); /* light blur */
+  background: rgba(255, 255, 255, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   z-index: 1;
 }
 
-/* Content should sit above overlay */
 .contact-content {
   position: relative;
   z-index: 2;
+}
+
+/* 2-column grid on desktop */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* form */
+.contact-form {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(15, 17, 36, 0.12);
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: 2px solid rgba(90, 72, 190, 0.5);
+  outline-offset: 1px;
+}
+
+.contact-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+.contact-direct {
+  margin-top: 10px;
+}
+
+/* aside card */
+.contact-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contact-aside-body {
+  margin-top: 12px;
+}
+
+.address-link {
+  display: inline-block;
+  margin-top: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+.address-link:hover {
+  text-decoration: underline;
+  color: #6a5acd;
+}
+
+.contact-office-line {
+  font-weight: 600;
+}
+
+.contact-hours,
+.contact-email {
+  margin-top: 10px;
+}
+
+/* alerts */
+.success {
+  color: #065f46;
+  background: #ecfdf5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(6, 95, 70, 0.08);
+}
+.error {
+  color: #7f1d1d;
+  background: #fff1f2;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(127, 29, 29, 0.06);
+}
+
+/* buttons */
+.btn-ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(56, 0, 76, 0.08);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contact-section {
+    padding: 40px 0;
+  }
 }

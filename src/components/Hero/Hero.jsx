@@ -1,116 +1,79 @@
 
-// import React from "react";
-// import "./Hero.css";
-// import SumImg from "../../assets/sum.jpg";
-// import StarRating from "../StarRating/StartRating";
-// // import StarRating from "../StarRating/LikeButton";
-// // import StarRating from "../StarRating/StarRating";
-
-// export default function Hero() {
-//   return (
-//     <div className="container hero">
-//       <div className="hero-grid">
-//         <div className="hero-card card">
-//           <img src={SumImg} alt="Summer Sheridan Zabre" />
-//         </div>
-
-//         <div className="hero-copy">
-//           <p className="heading">Welcome</p>
-//           <h1 className="section-title">
-//             Play Space — Therapy for children & families
-//           </h1>
-//             <p className="text-muted">
-//             My name is Summer Sheridan-Zabre, a licensed clinical social worker. My approach to psychotherapy is to focus on relationship building and fun. I started my career after graduating from Syracuse University with a major in Social Work and a minor in Psychology. Shortly after the terrorist attacks on the World Trade Center, I relocated to New York City and began working for the American Red Cross September 11 Recovery Program. I then went on to attain my masters in social work from Fordham University with a specialization in children and families. It was my experience in graduate school interning in a therapeutic nursery that I found my passion for social work in educational settings. I spent over 10 years working as a school social worker. I provide a warm and supportive environment where I help children and families address issues that include: managing emotions that impede growth and development, developing social skills, building a positive sense of self, and increasing the capacity for strong communication skills. My approach is rooted in relationship building. I focus on understanding what clients expected outcomes are and know that every family is unique. Through the therapeutic relationship I aim to empower my clients and families to learn and grow together.
-//          </p>
-
-//           <div style={{ marginTop: 18 }}>
-//             <a className="btn" href="#service">
-//               Explore Services
-//             </a>
-//             <a
-//               className="btn"
-//               style={{
-//                 marginLeft: 12,
-//                 background: "#fff",
-//                 color: "var(--primary)",
-//                 border: "1px solid rgba(56,0,76,0.08)",
-//               }}
-//               href="#contact"
-//             >
-//               Get in touch
-//             </a>
-//           </div>
-
-//           {/* ⭐ 5-star rating block */}
-//           <StarRating />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
-
-// src/components/Hero/Hero.jsx
 import React from "react";
 import "./Hero.css";
 import SumImg from "../../assets/sum.jpg";
 import StarRating from "../StarRating/StartRating";
-
+// import StarRating from "../StarRating/StarRating";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <section className="hero" aria-labelledby="hero-heading">
       <div className="hero-overlay"></div>
 
       <div className="container hero-content">
         <div className="hero-grid">
-          
           <div className="hero-card card">
-            <img src={SumImg} alt="Summer Sheridan Zabre" />
+            <img src={SumImg} alt="Summer Sheridan-Zabre, LCSW" />
           </div>
 
           <div className="hero-copy">
-            <p className="heading">Welcome</p>
+            <p className="hero-kicker">Welcome</p>
 
-            <h1 className="section-title">
-              Play Space — Therapy for children & families
+            <h1 id="hero-heading" className="section-title">
+              Play Space — Therapy for children &amp; families
             </h1>
 
+            <p className="hero-meta text-muted">
+              By appointment only · Upper West Side, New York City ·{" "}
+              <a href="#contact">Contact Summer</a>
+            </p>
+
+            <h2 className="hero-subheading">About Summer</h2>
+
             <p className="text-muted">
-           My name is Summer Sheridan-Zabre, a licensed clinical social worker. My approach to psychotherapy is to focus on relationship building and fun. I started my career after graduating from Syracuse University with a major in Social Work and a minor in Psychology. Shortly after the terrorist attacks on the World Trade Center, I relocated to New York City and began working for the American Red Cross September 11 Recovery Program. I then went on to attain my masters in social work from Fordham University with a specialization in children and families. It was my experience in graduate school interning in a therapeutic nursery that I found my passion for social work in educational settings. I spent over 10 years working as a school social worker. I provide a warm and supportive environment where I help children and families address issues that include: managing emotions that impede growth and development, developing social skills, building a positive sense of self, and increasing the capacity for strong communication skills. My approach is rooted in relationship building. I focus on understanding what clients expected outcomes are and know that every family is unique. Through the therapeutic relationship I aim to empower my clients and families to learn and grow together.
-         </p>
+              My name is <strong>Summer Sheridan-Zabre</strong>, a licensed
+              clinical social worker. My approach to psychotherapy is to focus
+              on relationship building and play. I started my career after
+              graduating from Syracuse University with a major in Social Work
+              and a minor in Psychology. Shortly after the terrorist attacks on
+              the World Trade Center, I relocated to New York City and began
+              working for the American Red Cross September 11 Recovery Program.
+            </p>
 
-            {/* <p className="text-muted" style={{ marginTop: 12 }}>
-              I bring decades of experience in school-based social work,
-              play therapy, and clinical supervision, helping children and
-              families grow together.
-            </p> */}
+            <p className="text-muted">
+              I went on to complete my master’s degree in social work at Fordham
+              University with a specialization in children and families. While
+              interning in a therapeutic nursery, I discovered my passion for
+              social work in educational settings and spent over 10 years
+              working as a school social worker.
+            </p>
 
-            <div style={{ marginTop: 18 }}>
+            <p className="text-muted">
+              I provide a warm, supportive environment where I help children and
+              families address challenges such as managing emotions that impede
+              growth, developing social skills, building a positive sense of
+              self, and strengthening communication. My approach is rooted in
+              relationship building and recognizing that every family is unique.
+            </p>
+
+            <div className="hero-cta-row">
               <a className="btn" href="#service">
-                Explore Services
+                Explore services
               </a>
 
               <a
-                className="btn"
-                style={{
-                  marginLeft: 12,
-                  background: "#fff",
-                  color: "var(--primary)",
-                  border: "1px solid rgba(56,0,76,0.08)",
-                }}
+                className="btn btn-ghost"
                 href="#contact"
               >
-                Get in touch
+                Book a consultation
               </a>
             </div>
-                <StarRating />
+
             {/* ⭐ Star Rating Section */}
-           
+            <StarRating />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

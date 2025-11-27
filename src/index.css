@@ -113,3 +113,45 @@ a { color: inherit; }
 
 /* Focus outline */
 :focus { outline: 4px solid rgba(124, 58, 237, .1); outline-offset:3px; }
+
+
+
+/* MOBILE TYPOGRAPHY & SPACING TWEAKS */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  .heading {
+    font-size: 0.95rem;
+  }
+
+  .hero .text-muted,
+  .contact-section .text-muted,
+  .services-section .text-muted {
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .services-section {
+    padding: 40px 0;
+  }
+}
