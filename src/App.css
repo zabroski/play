@@ -9,6 +9,12 @@
   }
 }
 
+/* prevent sticky navbar from covering the Contact section */
+#contact {
+  scroll-margin-top: 90px;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
