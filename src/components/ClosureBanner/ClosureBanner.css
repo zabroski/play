@@ -1,0 +1,156 @@
+.closureBanner {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  background:
+    radial-gradient(1200px 420px at 18% -45%, rgba(26, 73, 102, 0.22), transparent 60%),
+    linear-gradient(90deg, rgba(250, 252, 255, 0.98), rgba(245, 249, 252, 0.98));
+  border-bottom: 1px solid rgba(17, 24, 39, 0.10);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.closureBanner__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Top row becomes flexible so it fits cleanly on mobile */
+.closureBanner__topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.closureBanner__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #0b2a3b;
+  background: rgba(26, 73, 102, 0.10);
+  border: 1px solid rgba(26, 73, 102, 0.18);
+  white-space: nowrap;
+}
+
+.closureBanner__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #1a4966;
+  box-shadow: 0 0 0 4px rgba(26, 73, 102, 0.15);
+}
+
+/* Optional mobile CTA */
+.closureBanner__cta {
+  display: none; /* desktop hidden */
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  background: rgba(255, 255, 255, 0.86);
+  color: rgba(17, 24, 39, 0.86);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.closureBanner__cta:active {
+  transform: translateY(1px);
+}
+
+.closureBanner__content {
+  min-width: 0;
+}
+
+.closureBanner__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #0b2a3b;
+}
+
+.closureBanner__message {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.55; /* improved mobile readability */
+  color: rgba(17, 24, 39, 0.88);
+  overflow-wrap: anywhere;
+}
+
+.closureBanner__signoff {
+  font-weight: 800;
+  color: rgba(17, 24, 39, 0.92);
+}
+
+/* Mobile improvements */
+@media (max-width: 720px) {
+  .closureBanner__inner {
+    padding: 12px 12px;
+  }
+
+  .closureBanner__topRow {
+    gap: 8px;
+  }
+
+  .closureBanner__badge {
+    font-size: 12.5px;
+    padding: 7px 10px;
+  }
+
+  .closureBanner__cta {
+    display: inline-flex; /* show on mobile */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .closureBanner__title {
+    font-size: 14px;
+  }
+
+  .closureBanner__message {
+    font-size: 13.5px;
+  }
+}
+
+.closureBanner__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #0b2a3b;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.closureBanner__icon {
+  font-size: 16px;
+  line-height: 1;
+  filter: saturate(0.8);
+}
+
+/* Slightly smaller on very small phones */
+@media (max-width: 480px) {
+  .closureBanner__icon {
+    font-size: 15px;
+  }
+}
+
+
+/* Extra small screens */
+@media (max-width: 380px) {
+  .closureBanner__badge {
+    white-space: normal; /* allow wrap on very small phones */
+  }
+}
