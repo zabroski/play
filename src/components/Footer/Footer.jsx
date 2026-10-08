@@ -22,7 +22,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="address-link"
             >
-            215 West 88th Street, Suite 1C
+            295 Central Park West
           </a>
 
           <div className="text-muted">New York, NY 10024</div>

@@ -144,7 +144,7 @@ export default function Contact() {
                   className="address-link"
                 >
                   <div className="contact-office-line">
-                    215 West 88th Street, Suite 1C
+                    295 Central Park West
                   </div>
                   <div className="text-muted">New York, NY 10024</div>
                 </a>
