@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   padding: 60px 0;
-  background-image: url("../../assets/contact-bg.png");
+  /* background-image: url("../../assets/contact-bg.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,14 +53,14 @@
 .form-row input,
 .form-row textarea {
   border-radius: 10px;
-  border: 1px solid rgba(15, 17, 36, 0.12);
+  border: 1px solid var(--border);
   padding: 10px 12px;
   font-size: 0.95rem;
 }
 
 .form-row input:focus,
 .form-row textarea:focus {
-  outline: 2px solid rgba(90, 72, 190, 0.5);
+  outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
 
@@ -94,7 +94,7 @@
 }
 .address-link:hover {
   text-decoration: underline;
-  color: #6a5acd;
+  color: var(--accent);
 }
 
 .contact-office-line {
@@ -126,7 +126,7 @@
 .btn-ghost {
   background: transparent;
   color: var(--primary);
-  border: 1px solid rgba(56, 0, 76, 0.08);
+  border: 1px solid var(--border);
   padding: 10px 14px;
   border-radius: 10px;
   font-weight: 600;

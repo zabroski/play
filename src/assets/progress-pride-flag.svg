@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 72">
+  <title>Progress Pride flag</title>
+  <defs>
+    <clipPath id="flag">
+      <rect width="120" height="72" rx="4"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag)">
+    <path fill="#e40303" d="M0 0h120v12H0z"/>
+    <path fill="#ff8c00" d="M0 12h120v12H0z"/>
+    <path fill="#ffed00" d="M0 24h120v12H0z"/>
+    <path fill="#008026" d="M0 36h120v12H0z"/>
+    <path fill="#004dff" d="M0 48h120v12H0z"/>
+    <path fill="#750787" d="M0 60h120v12H0z"/>
+    <path fill="#000" d="M0 0h20l36 36-36 36H0z"/>
+    <path fill="#613915" d="M0 0h10l36 36-36 36H0z"/>
+    <path fill="#74d7ee" d="M0 0l36 36L0 72z"/>
+    <path fill="#ffaec9" d="M0 10l26 26L0 62z"/>
+    <path fill="#fff" d="M0 20l16 16L0 52z"/>
+  </g>
+</svg>

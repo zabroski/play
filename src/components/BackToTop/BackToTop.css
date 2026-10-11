@@ -7,8 +7,10 @@
   height: 44px;
   border-radius: 50%;
   border: none;
-  background: var(--primary);
-  color: #fff;
+  background: var(--coral);
+  color: var(--text);
+  box-shadow: 0 4px 14px rgba(37, 41, 31, 0.18);
+  cursor: pointer;
   font-size: 18px;
   opacity: 0;
   transform: translateY(6px);
@@ -19,3 +21,8 @@
   z-index:2000;
 }
 .back-to-top.visible { opacity:1; transform:translateY(0); }
+.back-to-top:hover { background: var(--coral-soft); }
+.back-to-top:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}

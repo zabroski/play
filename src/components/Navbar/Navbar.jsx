@@ -1,5 +1,6 @@
 
 import React from "react";
+import practiceLogo from "../../assets/practice-logo.png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -23,10 +24,9 @@ export default function Navbar() {
       <header className="topnav">
         <div className="container topnav-inner">
           <div className="brand">
-            <a href="#home" className="brand-title">
-              Summer Sheridan-Zabre
+            <a href="#home" className="brand-logo-link" onClick={() => setOpen(false)}>
+              <img src={practiceLogo} className="brand-logo" alt="Central Park Play Therapy — Home" width="140" height="140" />
             </a>
-            <div className="brand-sub">LCSW • Play Therapy</div>
           </div>
 
           <nav
@@ -45,15 +45,20 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
+                <a href="#team" onClick={() => setOpen(false)}>
+                  Teams
+                </a>
+              </li>
+              <li>
                 <a href="#contact" onClick={() => setOpen(false)}>
                   Contact
                 </a>
               </li>
               {/* Mobile contact info inside menu */}
               <li className="nav-inline-contact mobile-only">
-                <span>Upper West Side, NYC</span>
-                <a href="mailto:summersheridanzabreLCSW@gmail.com">
-                  Email Summer
+                <span>Central Park West, NYC</span>
+                <a href="mailto:info@centralparkplaytherapy.com">
+                  Email Central Park Play Therapy
                 </a>
               </li>
             </ul>
@@ -62,19 +67,19 @@ export default function Navbar() {
           <div className="nav-right">
             {/* Desktop quick contact */}
             <div className="nav-inline-contact desktop-only">
-              <span className="nav-location">Upper West Side, NYC</span>
+              <span className="nav-location">Central Park West, NYC</span>
               {/* <a
-                href="mailto:summersheridanzabreLCSW@gmail.com"
+                href="mailto:info@centralparkplaytherapy.com"
                 className="nav-contact-link"
               >
                 Email Summer
               </a> */}
 
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=summersheridanzabreLCSW@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=info@centralparkplaytherapy.com"
                target="_blank"
                rel="noopener noreferrer">
-                  Email Summer
+                  Email Central Park Play Therapy
               </a>
 
             </div>

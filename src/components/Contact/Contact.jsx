@@ -54,10 +54,10 @@ export default function Contact() {
             <h2 className="section-title" id="contact-heading">
               Let&apos;s connect
             </h2>
-            <p className="text-muted">
+            {/* <p className="text-muted">
               If you&apos;d like to schedule a session or have a question, send
               a short message below. I&apos;ll respond as soon as I can.
-            </p>
+            </p> */}
 
             <form
               ref={formRef}
@@ -121,11 +121,11 @@ export default function Contact() {
               <p className="text-muted contact-direct">
                 Prefer email?{" "}
                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=summersheridanzabreLCSW@gmail.com&su=Therapy%20Inquiry"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@centralparkplaytherapy.com&su=Therapy%20Inquiry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted">
-                    summersheridanzabreLCSW@gmail.com
+                    info@centralparkplaytherapy.com
                   </a>
               </p>
             </form>
@@ -133,7 +133,7 @@ export default function Contact() {
 
           <aside aria-label="Office information" className="contact-aside">
             <div className="card contact-card">
-              <img src={Drawing} alt="Child-friendly therapy room artwork" />
+              {/* <img src={Drawing} alt="Child-friendly therapy room artwork" /> */}
               <div className="contact-aside-body">
                 <div className="heading">Office</div>
 
@@ -144,7 +144,7 @@ export default function Contact() {
                   className="address-link"
                 >
                   <div className="contact-office-line">
-                    295 Central Park West
+                    295 Central Park West Office 5
                   </div>
                   <div className="text-muted">New York, NY 10024</div>
                 </a>
@@ -157,18 +157,18 @@ export default function Contact() {
                 <div className="contact-email">
                   <div className="heading">Email</div>
                   {/* <a
-                    href="mailto:summersheridanzabreLCSW@gmail.com"
+                    href="mailto:info@centralparkplaytherapy.com"
                     className="text-muted"
                   >
-                    summersheridanzabreLCSW@gmail.com
+                    info@centralparkplaytherapy.com
                   </a> */}
 
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=summersheridanzabreLCSW@gmail.com&su=Therapy%20Inquiry"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@centralparkplaytherapy.com&su=Therapy%20Inquiry"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted">
-                    summersheridanzabreLCSW@gmail.com
+                    info@centralparkplaytherapy.com
                   </a>
 
                 </div>
