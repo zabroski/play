@@ -2,19 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root{
-  --bg: #fffdf9;
-  --surface: #faf6f0;
-  --primary: #4c542f;
-  --primary-hover: #3c4425;
-  --accent: #9e4f44;
-  --coral: #df9388;
-  --coral-soft: #f6e5e0;
-  --border: #e5dfd3;
-  --muted: #636957;
-  --text: #25291f;
+  --bg: #ffffff;
+  --surface: #f8f7fb;
+  --primary: #38004c;
+  --accent: #7e3f8f;
+  --muted: #6b7280;
+  --text: #0f1724;
   --container: 1100px;
   --radius: 12px;
-  --shadow: 0 10px 30px rgba(76,84,47,0.07);
+  --shadow: 0 10px 30px rgba(15,17,36,0.06);
 }
 
 * { box-sizing: border-box; }
@@ -22,7 +18,7 @@ html,body,#root { height:100%; }
 body {
   margin:0;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(180deg,var(--bg) 0%, var(--surface) 100%);
+  background: linear-gradient(180deg,#fff 0%, #fbf8ff 100%);
   color: var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -42,7 +38,7 @@ body {
 section { padding: 56px 0; }
 @media (min-width: 720px) { section { padding: 88px 0; } }
 
-.heading { font-size: .85rem; color: var(--accent); text-transform:uppercase; letter-spacing:.06em; font-weight:700; margin-bottom:6px; }
+.heading { font-size: .85rem; color: var(--muted); text-transform:uppercase; letter-spacing:.06em; font-weight:700; margin-bottom:6px; }
 .section-title { font-size: 1.9rem; color:var(--text); margin: 6px 0 12px; line-height:1.08; }
 @media (min-width:720px) { .section-title { font-size: 2.6rem; } }
 
@@ -60,7 +56,7 @@ section { padding: 56px 0; }
   font-weight: 600;
   text-decoration: none;
 }
-.btn:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 
 /* Card */
 .card {
@@ -79,7 +75,7 @@ section { padding: 56px 0; }
 input,textarea,select {
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1px solid #e9e5ef;
   background: white;
   font-size: 1rem;
   width:100%;
@@ -98,8 +94,8 @@ a { color: inherit; }
   height:44px;
   border-radius: 50%;
   border: none;
-  background: var(--coral);
-  color: var(--text);
+  background: var(--primary);
+  color: #fff;
   font-size: 18px;
   opacity: 0;
   transform: translateY(6px);
@@ -116,7 +112,7 @@ a { color: inherit; }
 .card img { width:100%; display:block; border-radius: 8px; }
 
 /* Focus outline */
-:focus { outline: 3px solid var(--accent); outline-offset:3px; }
+:focus { outline: 4px solid rgba(124, 58, 237, .1); outline-offset:3px; }
 
 
 

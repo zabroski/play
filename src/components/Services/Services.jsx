@@ -4,14 +4,24 @@ import "./Services.css";
 
 const SERVICE_LIST = [
   {
-    title: "ABOUT OUR PRACTICE",
-    body: ` Welcome to Central Park Play Therapy! We are a small group practice based out of New York, NY that specializes in therapeutic work with children, adolescents, and families. Our Clinical Director, Summer Sheridan-Zabre, is a Licensed Clinical Social Worker, avid podcast listener who moved to New York in 2001 and argues that she is a true New Yorker. When not in the office, she can be found rollerblading, convincing people to try her baked goods, or binge watching 90’s r&b videos.   After over 25 years in the field, she built this practice to create a space where not only children and families can thrive, but therapists feel a sense of community in learning and growing from one another. Each therapist in the practice has their own unique qualities and experiences that lends to specific excellence in their respective niches.  At Central Park Play Therapy, we believe great therapists deserve the same care they provide to others. Through individualized supervision, meaningful professional development, and actually fun team experiences, we cultivate a supportive community where therapists feel valued, connected, and inspired. Our goal isn't simply to help clinicians stay in the field—we aim to help them grow, thrive and love the work they do;  and where they do it.  `,
+    title: "Play Therapy",
+    body: `“Scientists have discovered that it takes approximately 400 repetitions to create new synapses in the brain. Unless it is done in play, in which it only takes 10-20 repetitions.“ Karyn Purvis
+The primary modality used in our sessions is Play Therapy. Play is used as the primary communication tool with the purpose of using this symbolic communication to speak in the primary learning vehicle for children. Children use play to express feelings when they do not have the verbal skills to express thoughts, feelings and ideas. Play therapy relieves clinical symptoms by arming them with skills to use when struggling. Through play we will learn the skills needed to self regulate and then understand how to generalize these skills globally in various settings.`,
   },
   {
-    title: "Our Commitment to Inclusion",
-    body: `At Central Park Play Therapy, we believe every child deserves to feel seen, valued, understood, and accepted exactly as they are today and empower them to become who they strive to be. Our practice is committed to creating a welcoming, affirming, and inclusive space where children and families from all backgrounds can feel safe to explore, grow, and heal. We honor the unique identities, cultures, family structures, abilities, experiences, and perspectives that each child brings into the therapy space. We recognize that children thrive when they are supported by caring adults who respect and celebrate their individuality. Our therapists are dedicated to providing culturally responsive, compassionate care that acknowledges the impact of a child’s environment, relationships, and lived experiences. We welcome and support children and families of all races, ethnicities, religions, gender identities, gender expressions, sexual orientations, abilities, socioeconomic backgrounds, and family configurations. Our practice ensures an accessible environment for all entering our space, which may include physical or other accommodations. We are committed to ongoing learning, reflection, and growth so that our practice remains a place where every child and family knows they belong.  At Central Park Play Therapy, inclusion is more than a value—it is at the heart of how we connect, support, and care for every child and family we serve.  `,
+    title: "Grown-up Consultation",
+    body: `With a specialization in Children and Families, and over 20 years in the dynamic field of social work I understand families are all special and unique. Through our work together, my goal is to help families and the grown ups in my client’s life understand how to best support their loved one. This is done with monthly sessions to talk through strategies and progress.`,
   },
-
+  {
+    title: "School Consultation",
+    body: `“When a flower doesn't bloom, you fix the environment in which it grows, not the flower.” Alexander Den Heijer
+As a school based social worker for over 15 years, I understand that some spaces may be a challenge for some children. Where some children thrive, others may struggle. My work is rooted in understanding, and surfacing what needs are not being met. Once we have a better idea of this need, we can clearly articulate it and make a plan to ensure that your child is thriving and accommodated.`,
+  },
+  {
+    title: "Clinical Supervision",
+    body: `“Let go of who you think you’re supposed to be; and embrace who you are.” -Brene Brown
+As a social worker with more than 25 years in the field, I understand and am beyond passionate about the profession. Being a social worker has been one of the most pivotal and rewarding experiences of my life. My goal in clinical supervision is to build a strong relationship that empowers social workers to find what makes them thrive in the field. I have worked and supervised students for the last ten years in both individual and group settings.`,
+  }
 ];
 
 // HELPERS – KEEP PARAGRAPH FORMATTING

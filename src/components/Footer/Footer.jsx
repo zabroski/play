@@ -1,5 +1,4 @@
 import React from "react";
-import prideFlag from "../../assets/progress-pride-flag.svg";
 import "./Footer.css";
 
 export default function Footer() {
@@ -23,7 +22,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="address-link"
             >
-            295 Central Park West, Office 5
+            295 Central Park West
           </a>
 
           <div className="text-muted">New York, NY 10024</div>
@@ -32,32 +31,25 @@ export default function Footer() {
           <div>
           <div className="heading">Email</div>
           {/* <a
-            href="mailto:info@centralparkplaytherapy.com"
+            href="mailto:summersheridanzabreLCSW@gmail.com"
             className="text-muted footer-email"
           >
-            info@centralparkplaytherapy.com
+            summersheridanzabreLCSW@gmail.com
           </a> */}
 
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=info@centralparkplaytherapy.com&su=Therapy%20Inquiry"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=summersheridanzabreLCSW@gmail.com&su=Therapy%20Inquiry"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted">
-              info@centralparkplaytherapy.com
+              summersheridanzabreLCSW@gmail.com
           </a>
-        </div>
-      </div>
-
-      <div className="footer-welcome">
-        <div className="container footer-welcome-inner">
-          <p>All Are Welcome Here</p>
-          <img src={prideFlag} alt="Progress Pride flag" width="80" height="48" />
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          ©2026 Central Park Play Therapy LCSW — All rights
+          ©2023 Summer Sheridan-Zabre LCSW — All rights
           reserved
         </div>
       </div>
